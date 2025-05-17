@@ -9,7 +9,7 @@
         "ms-vscode.cpptools"
     ],
     "remoteEnv": {
-        "PATH": "${PATH}:${HOME}/samos/bin",
+        "PATH": "${containerEnv:PATH}:${HOME}/samos/bin",
         "PYTHONPATH": "${PYTHONPATH}:${HOME}/samos/analysis"
     }
 }
