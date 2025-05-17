@@ -3,6 +3,7 @@ FROM mcr.microsoft.com/devcontainers/cpp:0-ubuntu-22.04
 # Install dependencies
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+        bash \
         build-essential \
         cmake \
         ninja-build \
