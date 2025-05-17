@@ -1,0 +1,15 @@
+{
+    "name": "SAMoS Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "postCreateCommand": "bash .devcontainer/build-samos.sh",
+    "extensions": [
+        "ms-vscode.cpptools"
+    ],
+    "remoteEnv": {
+        "PATH": "${PATH}:${HOME}/samos/bin",
+        "PYTHONPATH": "${PYTHONPATH}:${HOME}/samos/analysis"
+    }
+}
